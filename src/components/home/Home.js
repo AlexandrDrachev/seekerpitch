@@ -2,6 +2,7 @@ import React from "react";
 
 import { useDispatch } from "react-redux";
 import { createNewErrorAction } from "../error-indicator/redux/errorIndicatorActions";
+import { getNewAlertMessageAction } from "../alert-indicator/redux/alertIndicatorActions";
 
 import Footer from "../footer";
 
@@ -13,6 +14,10 @@ const Home = () => {
         errorMessage: "ErrorIndicator Component is work!",
         errorTitle: "TEST ERROR!"
     };
+    const testAlertIndicator = {
+        alertIndicator: true,
+        alertMessage: "Alert Indicator component is work!"
+    };
 
     return (
         <div>
@@ -23,6 +28,13 @@ const Home = () => {
                     w-200 flex justify-center items-center cursor-pointer p-10 border hover:bg-blue-500
                     `}>
                     Test Error Button
+                </div>
+                <div
+                    onClick={() => dispatch(getNewAlertMessageAction(testAlertIndicator))}
+                    className={`
+                    w-200 flex justify-center items-center cursor-pointer p-10 border hover:bg-blue-500 mt-20
+                    `}>
+                    Test Alert Indicator Button
                 </div>
                 Home Content1
             </div>

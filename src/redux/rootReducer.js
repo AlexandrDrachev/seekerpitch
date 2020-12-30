@@ -4,6 +4,7 @@ import { howItWorksReducer, initialHowItWorksState } from "../components/how-it-
 import { ourStoryReducer, initialOurStoryState } from "../components/our-story/redux/ourStoryReducer";
 import { authReducer, initialAuthState } from "../components/auth/redux/authReducer";
 import { contactUsReducer, initialContactUsState } from "../components/contact-us/redux/contactUsReducer";
+import { alertIndicatorReducer, initialAlertIndicatorState } from "../components/alert-indicator/redux/alertIndicatorReducer";
 
 const initialState = {
     errorIndicatorState: initialErrorIndicatorState,
@@ -11,20 +12,30 @@ const initialState = {
     howItWorksState: initialHowItWorksState,
     ourStoryState: initialOurStoryState,
     authState: initialAuthState,
-    contactUsState: initialContactUsState
+    contactUsState: initialContactUsState,
+    alertIndicatorState: initialAlertIndicatorState
 };
 
 const rootReducer = (state = initialState, action) => {
     console.log('action: ', action);
     console.log('state: ', state);
-    const { errorIndicatorState, homeState, howItWorksState, ourStoryState, authState, contactUsState } = initialState;
+    const {
+        errorIndicatorState,
+        homeState,
+        howItWorksState,
+        ourStoryState,
+        authState,
+        contactUsState,
+        alertIndicatorState
+    } = initialState;
     return {
         errorIndicatorState: errorIndicatorReducer(errorIndicatorState, action),
         homeState: homeReducer(homeState, action),
         howItWorksState: howItWorksReducer(howItWorksState, action),
         ourStoryState: ourStoryReducer(ourStoryState, action),
         authState: authReducer(authState, action),
-        contactUsState: contactUsReducer(contactUsState, action)
+        contactUsState: contactUsReducer(contactUsState, action),
+        alertIndicatorState: alertIndicatorReducer(alertIndicatorState, action)
     };
 };
 

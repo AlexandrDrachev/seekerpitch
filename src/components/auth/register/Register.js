@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 import Footer from "../../footer"
@@ -10,6 +10,70 @@ import { ReactComponent as LinkedinIcon } from "../../../icons/linkedin-icon.svg
 import { ReactComponent as GoogleIcon } from "../../../icons/google-icon.svg";
 
 const Register = () => {
+
+    const [ newUser, setNewUser ] = useState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        cell: "",
+        password: ""
+    });
+
+    const [ validateError, setValidateError ] = useState({
+        inputError: false,
+        inputErrorMessage: ""
+    });
+
+    const getInputValue = (event, variable) => {
+        setNewUser({
+            ...newUser,
+            [variable]: event.target.value
+        });
+    };
+
+    const validatedForm = () => {
+        const { firstName, lastName, email, cell, password } = newUser;
+        if (firstName.length < 3) {
+            setValidateError({
+                inputError: true,
+                inputMessageError: "The \"First name\" field must contain at least 3 characters"
+            });
+        } else if (lastName.length < 3) {
+            setValidateError({
+                inputError: true,
+                inputMessageError: "The \"Last name\" field must contain at least 3 characters"
+            });
+        } else if (email.length < 5) {
+            setValidateError({
+                inputError: true,
+                inputMessageError: "The \"Email\" field must contain at least 5 characters"
+            });
+        } else if (!email.includes("@")) {
+            setValidateError({
+                inputError: true,
+                inputMessageError: "The \"Email\" field must contain the \"@\" symbol"
+            });
+        } else if (cell.length < 5) {
+            setValidateError({
+                inputError: true,
+                inputMessageError: "The \"Cell\" field must contain at least 5 characters"
+            });
+        } else if (!Number(cell)) {
+            setValidateError({
+                inputError: true,
+                inputMessageError: "the \"Cell\" field should only contain numbers"
+            });
+        } else if (password.length < 3) {
+            setValidateError({
+                inputError: true,
+                inputMessageError: "The \"Password\" field must contain at least 3 characters"
+            });
+        }
+    };
+
+    useEffect(() => {
+        console.log('newUser: ', newUser);
+    }, [newUser]);
 
     return (
         <div className={`w-full flex flex-col justify-center items-center`}>
@@ -42,6 +106,7 @@ const Register = () => {
                         border-gray-700 rounded-tr rounded-br
                         `}>
                         <input
+                            onChange={(e) => getInputValue(e, "firstName")}
                             type="text"
                             placeholder="First name"
                             className={`
@@ -68,6 +133,7 @@ const Register = () => {
                         border-gray-700 rounded-tr rounded-br
                         `}>
                         <input
+                            onChange={(e) => getInputValue(e, "lastName")}
                             type="text"
                             placeholder="Last name"
                             className={`
@@ -94,6 +160,7 @@ const Register = () => {
                         border-gray-700 rounded-tr rounded-br
                         `}>
                         <input
+                            onChange={(e) => getInputValue(e, "email")}
                             type="text"
                             placeholder="Email"
                             className={`
@@ -120,6 +187,7 @@ const Register = () => {
                         border-gray-700 rounded-tr rounded-br 
                         `}>
                         <input
+                            onChange={(e) => getInputValue(e, "cell")}
                             type="text"
                             placeholder="Cell number"
                             className={`
@@ -135,7 +203,7 @@ const Register = () => {
                         `}>
                             <div
                                 className={`
-                            w-25 h-25 mx-15 text-gray-600
+                            w-20 h-20 mx-15 text-gray-600
                             `} >
                                 <LocationIcon />
                             </div>
@@ -146,6 +214,7 @@ const Register = () => {
                         border-gray-700 rounded-tr rounded-br 
                         `}>
                             <input
+                                onChange={(e) => getInputValue(e, "password")}
                                 type="password"
                                 placeholder="Password"
                                 className={`
@@ -157,6 +226,7 @@ const Register = () => {
                 <div
                     className={`
                 py-5 px-35 bg-yellow-300 rounded font-bold text-sm mb-10 mt-20 text-gray-700 cursor-pointer
+                hover:bg-yellow-400
                 `}>
                     NEXT STEP
                 </div>
