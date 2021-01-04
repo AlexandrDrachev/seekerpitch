@@ -19,7 +19,7 @@ const App = () => {
 
   return (
       <div className="container w-full mx-auto relative">
-          <AlertIndicator />
+          {/*<AlertIndicator />*/}
           <Header />
           <Switch>
               {

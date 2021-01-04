@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 import { ReactComponent as UserIcon } from "../../icons/user-icon.svg";
+import AlertIndicator from "../alert-indicator";
 
 const Header = () => {
 
@@ -35,7 +36,8 @@ const Header = () => {
 
     return (
         <div className={`top-0 left-0 sticky bg-white`}>
-            <div className={`w-full flex justify-between items-center py-20 px-30`}>
+            <div className={`relative w-full flex justify-between items-center py-20 px-30`}>
+                <AlertIndicator />
                 <Link to="/">
                     <div className={`flex justify-center items-center tracking-wider text-2xl`}>
                         <h1 className={`text-gray-700 font-bold`}>SEEKER</h1>
