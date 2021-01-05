@@ -1,6 +1,8 @@
 import React from "react";
 
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
+
 import { createNewErrorAction } from "../error-indicator/redux/errorIndicatorActions";
 import { getNewAlertMessageAction } from "../alert-indicator/redux/alertIndicatorActions";
 
@@ -36,6 +38,7 @@ const Home = () => {
                     `}>
                     Test Alert Indicator Button
                 </div>
+                <Link to="/video-chat/lobby" className={`m-20 cursor-pointer`}>Redirect to video-chat</Link>
                 Home Content1
             </div>
             <div className={`bg-red-400 h-500 mb-10`}>Home Content2</div>

@@ -5,6 +5,7 @@ import { ourStoryReducer, initialOurStoryState } from "../components/our-story/r
 import { authReducer, initialAuthState } from "../components/auth/redux/authReducer";
 import { contactUsReducer, initialContactUsState } from "../components/contact-us/redux/contactUsReducer";
 import { alertIndicatorReducer, initialAlertIndicatorState } from "../components/alert-indicator/redux/alertIndicatorReducer";
+import { videoChatReducer, initialVideoChatState } from "../components/video-chat/redux/videoChatReducer";
 
 const initialState = {
     errorIndicatorState: initialErrorIndicatorState,
@@ -13,7 +14,8 @@ const initialState = {
     ourStoryState: initialOurStoryState,
     authState: initialAuthState,
     contactUsState: initialContactUsState,
-    alertIndicatorState: initialAlertIndicatorState
+    alertIndicatorState: initialAlertIndicatorState,
+    videoChatState: initialVideoChatState
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -26,7 +28,8 @@ const rootReducer = (state = initialState, action) => {
         ourStoryState,
         authState,
         contactUsState,
-        alertIndicatorState
+        alertIndicatorState,
+        videoChatState
     } = initialState;
     return {
         errorIndicatorState: errorIndicatorReducer(errorIndicatorState, action),
@@ -35,7 +38,8 @@ const rootReducer = (state = initialState, action) => {
         ourStoryState: ourStoryReducer(ourStoryState, action),
         authState: authReducer(authState, action),
         contactUsState: contactUsReducer(contactUsState, action),
-        alertIndicatorState: alertIndicatorReducer(alertIndicatorState, action)
+        alertIndicatorState: alertIndicatorReducer(alertIndicatorState, action),
+        videoChatState: videoChatReducer(videoChatState, action)
     };
 };
 

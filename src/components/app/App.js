@@ -7,7 +7,6 @@ import routes from "../../services/routes/routes";
 
 import Header from "../header";
 import ErrorIndicator from "../error-indicator";
-import AlertIndicator from "../alert-indicator";
 
 const App = () => {
 
@@ -19,7 +18,6 @@ const App = () => {
 
   return (
       <div className="container w-full mx-auto relative">
-          {/*<AlertIndicator />*/}
           <Header />
           <Switch>
               {
