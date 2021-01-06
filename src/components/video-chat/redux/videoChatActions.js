@@ -13,3 +13,9 @@ export const getChatRoomSaga = (chatObj) => {
         payload: chatObj
     };
 };
+
+export const quitChatAction = () => {
+    return {
+        type: "QUIT_CHAT_ACTION"
+    };
+};
