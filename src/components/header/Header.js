@@ -35,7 +35,7 @@ const Header = () => {
     };
 
     return (
-        <div className={`top-0 left-0 sticky bg-white`}>
+        <div className={`top-0 left-0 sticky bg-white border-b border-gray-400`}>
             <div className={`relative w-full flex justify-between items-center py-20 px-30`}>
                 <AlertIndicator />
                 <Link to="/">

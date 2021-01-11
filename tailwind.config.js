@@ -2,11 +2,22 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    backgroundColor: theme => ({
+      ...theme("colors"),
+      dirtyBlue: "#2a9fd8",
+      dirtyGreen: "#6cb043"
+    }),
+    borderColor: theme => ({
+      ...theme("colors"),
+      dirtyBlue: "#2a9fd8",
+      dirtyGreen: "#6cb043"
+    }),
     extend: {},
     spacing: {
       "20%": "20%",
       "30%": "30%",
       "40%": "40%",
+      "50%": "50%",
       "0": 0,
       "1": "1px",
       "2": "2px",
