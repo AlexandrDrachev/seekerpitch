@@ -12,9 +12,9 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <Provider store={store}>
-      <Router>
-          <App />
-      </Router>
+    <Router>
+      <App />
+    </Router>
   </Provider>,
   document.getElementById('root')
 );

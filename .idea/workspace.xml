@@ -4,8 +4,35 @@
     <list default="true" id="2bf5777c-e5c7-42db-aef2-a3a5fbbc8dd1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/alert-indicator/AlertIndicator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/alert-indicator/AlertIndicator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/alert-indicator/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/alert-indicator/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/alert-indicator/redux/alertIndicatorActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/alert-indicator/redux/alertIndicatorActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/alert-indicator/redux/alertIndicatorReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/alert-indicator/redux/alertIndicatorReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/alert-indicator/redux/alertIndicatorSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/alert-indicator/redux/alertIndicatorSaga.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/auth/AuthConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/AuthConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/auth/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/auth/login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/auth/login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/auth/redux/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/redux/authReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/auth/register/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/register/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/auth/register/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/register/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contact-us/ContactUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact-us/ContactUs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contact-us/ContactUsConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact-us/ContactUsConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contact-us/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact-us/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contact-us/redux/contactUsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact-us/redux/contactUsReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/error-indicator/ErrorIndicator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/error-indicator/ErrorIndicator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/error-indicator/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/error-indicator/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/error-indicator/redux/errorIndicatorActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/error-indicator/redux/errorIndicatorActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/error-indicator/redux/errorIndicatorReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/error-indicator/redux/errorIndicatorReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +45,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
   <component name="ProjectId" id="1m3RmUurDwv0S8B1m8LYwugwdiM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -27,14 +59,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -57,10 +93,15 @@
       <workItem from="1608721948394" duration="81242000" />
       <workItem from="1609312600162" duration="9656000" />
       <workItem from="1609743833641" duration="2937000" />
+      <workItem from="1613976813670" duration="11663000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
